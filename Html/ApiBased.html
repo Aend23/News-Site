@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Css/ApiBased.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+        <nav class="navbar">
+            <div class="cmp-img" onclick="reload()">
+                <img src="../Pic/wallpaperflare.com_wallpaper (1).jpg" alt="" >
+            </div>
+            <div class="links">
+                <ul  id="navVer">
+                    <li class="nav-item active" onclick="news('india')" id="india">home</li>
+                    <li class="nav-item" onclick="news('anime')" id="anime">anime</li>
+                    <li class="nav-item" onclick="news('coding')" id="coding">coding</li>
+                    <li class="nav-item" onclick="news('trending')" id="trending">trending</li>
+                    <!-- <li href="#query"></li> -->
+                </ul>
+            </div>
+            <div class="search">
+                <input type="text" class="search-txt" placeholder="Search">
+                <button class="search-btn"><i class='bx bx-search-alt'></i></button>
+                <i class='bx bx-moon hide'></i>
+                <i class='bx bx-menu' onclick="show()"></i>
+                <!-- <i class='bx bx-collapse' onclick="clo()"></i>   -->
+            </div>
+        </nav>
+        
+    <section class="cards">
+        <div class="card-container" id="card-con">
+                        
+        </div>
+    </section>
+
+    <template id="cardTemp">
+            <div class="card">
+                <div class="card-img">
+                    <img src="../Pic/anime-boy-cherry-blossom.jpg" alt="" id="newsImg">
+                </div>
+                <div class="content">
+                    <h2 class="title" id="newsTitle">Lorem ipsum dolor sit amet.</h2>
+                    <h6 id="newsSrc"></h6>
+                    <p class="desp" id="newsDes"></p>
+                </div>
+            </div>
+        </template>
+
+
+        <section class="footer">
+            <div class="share">
+                <a href="#" class='bx bxl-meta bx-burst'></a>
+                <a href="#" class='bx bxl-linkedin bx-burst'></a>
+                <a href="#" class='bx bxl-twitter bx-burst'></a>
+                <a href="#" class='bx bxl-instagram bx-burst' ></a>
+                <a href="#" class="bx bxl-reddit bx-burst"></a>
+            </div>
+            <div class="links">
+                <a href="#home" onclick="reload()">home</a>
+            </div>
+            <div class="credit">
+                created by <span>Maina Yadav</span> | all rights reserved
+            </div>
+        </section>
+    <script src="../JS/ApiBased.js"></script>
+</body>
+</html>

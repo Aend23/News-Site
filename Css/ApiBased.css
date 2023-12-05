@@ -1,0 +1,354 @@
+  @import url('https://fonts.googleapis.com/css2?family=Foldit:wght@400;600&family=Noto+Sans+JP:wght@400;600&family=Signika:wght@400;600&display=swap');
+
+  /* @import url('https://fonts.googleapis.com/css2?family=Signika:wght@400;600&display=swap'); */
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root{
+    --bg :#8c58e0;
+    --II-bg : #382654;
+    --text:#f6c3ec;
+    --more:#eae4f5;
+  }
+  
+body{
+    font-family: 'Signika', sans-serif;
+    color:#35233e;
+    text-transform: capitalize;
+    background: rgba(210, 195, 195, 0.352);
+}
+ul{
+    list-style: none;
+}
+
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    /* margin-top: 5px; */
+    padding: 5px;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    box-shadow: 0 2px 1px var(--II-bg);
+    background: var(--bg);
+    height: 4rem;
+  }  
+
+   
+  .cmp-img img{
+    margin-left: 30px;
+    width:6rem;
+    border: 1px solid black;
+    border-radius: 9%;
+  }
+  .links #navVer{
+    font-size: 1.5rem;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .links #navVer .active{
+    color: rgb(34, 6, 251);
+  }
+
+  .links #navVer .nav-item:hover{
+    cursor: pointer;
+    transition: .3s ease;
+    transform: translateY(-3px);
+    border-bottom: 1px solid var(--II-bg);
+  }
+
+  .search{
+    margin-right: 20px;
+    display: flex;
+    gap: 5px;  
+  }
+
+  .search-txt{
+    font-family: 'Signika', sans-serif;
+    color: gray;
+    font-weight: 600;
+    width: 15rem;
+    padding: .3rem;
+    border: 2px solid rgba(71, 114, 184, 0.668);
+    border-radius: 4px;
+  }
+
+  .search-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+ .search-btn .bx-search-alt{
+    font-weight: 200;
+    font-size: 1.6rem;
+    padding: 2px;
+    color: #f6c3ec;
+  }
+
+  .bx-sun{
+    align-self: center;
+    font-size: 1.3rem;
+    margin-left: 5px;
+    color: black;
+  }
+  
+  .search .bx-menu,.search .bx-collapse{
+    display: none;
+    font-size: 1.8rem;
+    margin-left: 5px;
+    color: #f6c3ec;
+  }
+
+  
+  .bx-moon{
+    align-self: center;
+    font-size: 1.3rem;
+    margin-left: 5px;
+    color: white;
+    /* transition: 5s ease; */
+  }
+
+  .cards{
+    padding: 50px 110px 20px 110px;
+    /* width: 98vw; */
+    /* height: ; */
+    /* margin-inline: auto; */
+    overflow: hidden;
+    background: var(--II-bg);
+  
+  }
+
+  .cards .card-container{
+    margin-top: 50px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .card-container .card{
+    flex:1 1 10rem ;
+    border-radius: 1rem;
+    border: .5px solid black;
+    padding: .5rem;
+    background: var(--more);
+    transition: .5s ease;
+    height: 400px;
+    box-shadow: 3px 2px 8px white ;
+    /* overflow: hidden; */
+  }
+
+  /* .card .content .desp{
+    overflow: hidden;
+  } */
+
+  .card-container .card:hover{
+    transform: translateY(-3%);
+  }
+
+  .card .card-img{
+    text-align: center;
+    margin-bottom: 10px;
+    transition: .7s ease-in;
+  }
+
+  .card .card-img img{
+    border-radius: .8rem;
+    width: 300px;
+    height: 200px;
+  }
+
+  .card .card-img:hover{
+    transform: translateY(3%);
+  }
+
+  
+
+  .card .title{
+    margin-top: 5px;
+  }
+
+  .card .content #newsSrc{
+    /* color: red; */
+    font-size: 15px;
+    margin-top: 5px;
+    word-spacing: 3px;
+  }
+
+  .card .content .desp{
+    margin-top: 5px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+
+  .sunNav{
+    background: #fff;
+  }
+  .sunCards{
+    background: #eee;
+  }
+
+ .cards .card-container .sunCard{
+    background: rgb(29, 28, 28);
+    color: #fff;
+  }
+
+  .footer{
+    background: var(--bg);
+    text-align: center;
+}
+
+.footer .share a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 1.5rem;
+    color: #fff;
+    margin: .3rem;
+    border: 1px solid var(--more);
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.footer .share a:hover{
+    background-color: var(--II-bg);
+}
+
+.footer .links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    gap: 1rem;
+}
+
+.footer .links a{
+    padding: .7rem 2rem;
+    color: #fff;
+    border: 3px double var(--II-bg);
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: .5s ease;
+}
+
+.footer .links a:hover{
+    background: var(--II-bg);
+}
+
+.footer .credit{
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: lighter;
+    padding: .5rem;
+}
+.footer .credit span{
+    color: var(--text);
+}
+
+
+@media(max-width:1220px ){
+  .card .card-img img{
+    width: 245px;
+    height: 190px;
+  }
+  .cards{
+    padding: 50px 60px 15px 60px;
+  }
+
+  .content .title{
+    font-size: 20px;
+  }
+}
+
+@media(max-width:860px){
+  .card .card-img img{
+    width: 230px;
+    height: 150px;
+  }
+}
+
+@media(max-width:785px){
+
+  .search .bx-menu,.search .bx-collapse{
+    display: block;
+    cursor: pointer;
+  }
+
+  .card .card-img img{
+    width: 190px;
+    height: 132px;
+  }
+
+  .navbar .links #navVer{
+    display: block;
+    background: var(--bg);
+    position: absolute;
+    right: 100%;
+    margin-top: 2.1rem;
+    width: 40%;
+    height: 25rem;
+    text-align: center;
+    padding: 15px;
+    border-radius: .7rem 0 0 .7rem ;
+  }
+
+  .navbar .links #navVer.ac{
+    right: 3px;
+  }
+
+  .navbar .links #navVer .nav-item{
+    margin-top: 2rem;
+    transition: .5s ease;
+  }
+  .navbar .links #navVer .nav-item:hover{
+    border-bottom: none;
+  }
+}
+
+@media(max-width:625px){
+  .card-container{
+    width: 100%;
+  }
+  .cards{
+    padding: 30px 10px ;
+  }
+  .card-container .card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   gap: 10px;
+   height: 200px;
+  }
+  .card .card-img img{
+    width: 175px;
+    height: 165px;
+  }
+  .content .title{
+    font-size: 20px;
+  }
+  .content .desp{
+    font-size: 15px;
+  }
+
+  .navbar .cmp-img img{
+    width: 3.5rem;
+    height: 2.5rem;
+  }
+
+  .navbar .search .search-txt{
+   width: 100%;
+
+  }
+  .navbar .search .search-btn i{
+    font-size: 20px;
+  }
+}
